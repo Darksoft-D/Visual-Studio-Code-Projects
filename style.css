@@ -1,8 +1,49 @@
+@font-face {
+    font-family: "Hoshiko";
+    src: url(fonts/Hoshiko\ Satsuki.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     background-color: black;
     color: white;
     text-align: center;
     margin-top: auto;
+}
+
+.topnav {
+    overflow: hidden;
+    background-image: url(images/liquid-marbling-paint-texture-background-fluid-painting-abstract-texture-intensive-color-mix-wallpaper.jpg);
+}
+
+.logo {
+  float: left;
+  font-family: "Hoshiko", sans-serif;
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 25px;
+  text-align: top;
+  margin-left: 10px;
+}
+
+.topnav a {
+  float: right;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 30px 16px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.topnav a:hover {
+  background-color: violet;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: darkmagenta;
+  color: white;
 }
 
 h1 {
@@ -23,7 +64,7 @@ ol {
     filter: brightness(100%);
     background-size: cover;
     width: 100%;
-    height: 700px;
+    height: 500px;
     align-items: center;
     justify-content: center;
     position: sticky;
@@ -46,4 +87,5 @@ ol {
 
 .content {
     background-color: black;
+    padding: 20px;
 }
