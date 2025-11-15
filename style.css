@@ -6,7 +6,8 @@
 }
 
 body {
-    background-color: black;
+    background-image: url(images/blue-bokeh-textured-plain-product-background.jpg);
+    background-attachment: fixed;
     color: white;
     text-align: center;
     margin-top: auto;
@@ -28,7 +29,8 @@ body {
 }
 
 .topnav a {
-  float: right;
+  float: left;
+  margin-left: 20px;
   color: #f2f2f2;
   text-align: center;
   padding: 30px 16px;
@@ -37,12 +39,11 @@ body {
 }
 
 .topnav a:hover {
-  background-color: violet;
-  color: black;
+  text-decoration: underline;
 }
 
 .topnav a.active {
-  background-color: darkmagenta;
+  text-decoration: underline;
   color: white;
 }
 
@@ -67,9 +68,6 @@ ol {
     height: 500px;
     align-items: center;
     justify-content: center;
-    position: sticky;
-    top: 0;
-    z-index: -1;
 }
 
 .banner:after {
@@ -86,6 +84,5 @@ ol {
 }
 
 .content {
-    background-color: black;
     padding: 20px;
 }
