@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videogames</title>
+</head>
+<body>
+    <div class="topnav">
+        <p class="logo">Darksoft</p>
+        <a href="main.html">Home</a>
+        <a class="active" href="videogamespage.html">Videogames</a>
+        <a href="#anime">Anime</a>
+        <a href="#manga">Manga</a>
+        <a href="#japanese">Japanese</a>
+        <a href="#game development">Game Development</a>
+    </div>
+
+    <h1 class="videogamestitle">Viodegames</h1>
+    <div class="mario">
+        <div class="coin"></div>
+        <img class="blockimg" src="images/toppng.com-mario-block-transparent-clipart-free-download-ya-webdesign-pixel-mario-mystery-block-449x449.png">
+    </div>
+
+    <div class="container">
+        <div class="gameinfo">
+            <div class="img-wrapper">
+                <img src="images/persona_3_reload-square_1.jpg">
+            </div>
+        </div>
+        <div class="gameinfo">
+            <div class="img-wrapper">
+                <img src="images/clair_obscur_expedition_33-square_2.png">
+            </div>
+        </div>
+        <div class="gameinfo">
+            <div class="img-wrapper">
+                <img src="images/final_fantasy_vii_remake-square.jpg">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const coin = document.querySelector('.coin');
+        const block = document.querySelector('.blockimg');
+        let position = 0;
+        function animateCoin() {
+            position += 50;
+            if (position > 200) {
+                position = 0;
+            }
+            coin.style.backgroundPosition = `-${position}px 0`;
+        }
+
+        block.addEventListener('click', function() {
+            coin.style.display = 'block';
+            coin.classList.add('up');
+            setInterval(animateCoin, 100);
+            block.removeEventListener('click', arguments.callee);
+        });
+    </script>
+</body>
+</html>
