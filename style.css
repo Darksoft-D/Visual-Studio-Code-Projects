@@ -112,27 +112,24 @@ ol {
 }
 
 .aboutus {
-    /* blocks stacked vertically and centered */
     display: block;
     max-width: 1200px;
     margin: 0 auto 50px;
     padding: 0 10px;
 }
 
-/* each block: no flex, wider and taller (3x) */
 .clubinfo {
-    width: 1020px; /* 340 * 3 */
-    min-height: 450px; /* 150 * 3 */
-    display: block; /* ensure it's a normal block so they stack */
+    width: 1020px;
+    min-height: 450px;
+    display: block;
     background: rgba(0,0,0,0.35);
     padding: 20px;
     border-radius: 8px;
     box-sizing: border-box;
-    margin: 18px auto; /* center each block and add vertical spacing */
+    margin: 18px auto;
     font-size: 0;
 }
 
-/* text on left */
 .clubinfo .text {
     display: inline-block;
     width: 50%;
@@ -164,7 +161,6 @@ ol {
     color: white;
 }
 
-/* image on right */
 .clubinfo .img-wrapper {
     display: inline-block;
     width: 50%;
@@ -176,7 +172,6 @@ ol {
     border: 2px solid gray;
 }
 
-/* ensure the image fills its half */
 .clubinfo .img-wrapper img {
     width: 100%;
     height: 100%;
@@ -199,7 +194,6 @@ ol {
 .footer p {
     color:black;
     font-size: 20px;
-    font-family: "Hoshiko", sans-serif;
     margin: 0;
     flex: 0 0 auto;
     margin-left: 20px;
@@ -210,7 +204,11 @@ ol {
     font-size: 20px;
     flex: 1;
     text-align: center;
-    margin-right: 150px;
+    margin-right: 375px;
+}
+
+.footer ul li {
+    color: black;
 }
 
 .slide-in-left {
@@ -234,15 +232,18 @@ ol {
 
 /* made on lesson */
 
+.videogamestitle {
+    font-size: 80px;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
 .Table {
     align-content: center;
     align-items: center;
-    font-size: 100px;
+    font-size: 50px;
     text-align: center;
-}
-
-.Table table {
-    width: 100%;
+    background-color: black;
 }
 
 .Table th {
@@ -276,7 +277,9 @@ ol {
 }
 
 .container {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
     justify-content: center;
 }
 
@@ -320,39 +323,16 @@ ol {
     transform: scale(1.1);
 }
 
-.coin {
-    background-image: url(images/MonedaD.png);
-    position: relative;
-    transition: top 0.3s ease;
-    top: 50px;
-    height: 50px;
-    width: 50px;
-    background-size: 250px 50px;
-    z-index: -1;
-}
-
-.coin.up {
-    top: 0px;
-}
-
-.videogamestitle {
-    display: inline-block;
-}
-.mario {
-    display: inline-block;
-    justify-content: center;
-}
-
 .box-parent {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 50vh;
 }
 
 .box {
     width: 1000px;
-    height: 800px;
+    height: 100px;
     background-color: black;
     border-style: solid;
     border-radius: 10px;
